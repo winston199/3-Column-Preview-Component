@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Inter:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Outfit:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Outfit:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h2{
+    color: hsl(0, 0%, 95%);
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 0.7rem 1rem;
+}
+
+
+p{
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    padding: 1rem;
+    line-height: 1.4rem;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+
+button{
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 0.7rem;
+    border-style: none;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+img{
+    padding: 1rem;
+}
+
+
+.container{
+    max-width: 275px;
+    margin: 2rem auto;
+}
+
+
+
+/*****SEDANS*****/
+
+.sedans{
+    background-color: var(--Bright-orange);
+    padding: 0.8rem 1.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.sedans button{
+    color: var(--Bright-orange);
+}
+
+
+
+/*****SUV*****/
+
+.suv{
+    background-color: var(--Dark-cyan);
+    padding: 0.8rem 1.5rem;
+}
+
+.suv button{
+    color: var(--Dark-cyan);
+}
+
+
+
+/*****LUXURY*****/
+
+.luxury{
+    background-color: var(--Very-dark-cyan);
+    padding: 0.8rem 1.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.luxury button{
+    color: --Very-dark-cyan();
+}
+
+
+/*****ATTRIBUTION*****/
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+    padding-bottom: 2rem;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+
+@media (min-width: 1280px){ 
+
+    .container{
+        display: flex;
+        max-width: 780px;
+        
+    }
+
+   .sedans{
+       border-radius: 0;
+       border-top-left-radius: 0.5rem;
+       border-bottom-left-radius: 0.5rem;
+   }
+
+   button{
+       margin-top: 4rem;
+       padding: 0.8rem 1.5rem;
+   }
+
+   .luxury{
+    border-radius: 0;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+   }
+}
